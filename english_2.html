@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Your House – English Course</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#f5f8f7;color:#202725;font-family:Arial,Helvetica,sans-serif;line-height:1.6}
+main{max-width:1000px;margin:auto;padding:28px 20px 55px}
+.hero{background:linear-gradient(135deg,#123f3a,#187568);border-radius:20px;padding:44px;margin-bottom:42px;color:#fff}
+.hero .eyebrow{margin:0 0 10px;color:#d8eeea;font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase}
+.hero h1{margin:0 0 14px;color:#fff;font:700 46px/1.1 Georgia,serif}
+.hero p{max-width:700px;margin:0;color:#f4f9f8;font-size:17px}
+.section{margin-bottom:48px}
+.heading{display:flex;align-items:center;gap:12px;margin-bottom:8px}
+.heading svg{width:30px;height:30px;color:#d8794c}
+h2{margin:0;color:#123f3a;font:700 28px/1.25 Georgia,serif}
+.subtitle{margin:0 0 22px;color:#596561;font-size:15px}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.card,.task{background:#fff;border:1px solid #d9e5e2;border-radius:14px;box-shadow:0 3px 12px rgba(18,63,58,.06)}
+.card{padding:18px; display:flex; flex-direction:column;}
+.en{margin-bottom:7px;color:#123f3a;font-size:17px;font-weight:700}
+.tag{display:inline-block;padding:4px 10px;background:#e8f4f2;color:#176f63;border-radius:999px;font-size:12px;font-weight:700; align-self: flex-start;}
+.example{margin:12px 0 0;color:#4e5956;font-size:14px;font-style:italic; flex-grow: 1;}
+
+.action-area {
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 1px dashed #d9e5e2;
+}
+.btn-translate {
+  background: #fff;
+  color: #176f63;
+  border: 1px solid #176f63;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  width: 100%;
+}
+.btn-translate:hover {
+  background: #176f63;
+  color: #fff;
+}
+.translation {
+  display: none;
+  margin-top: 10px;
+  color: #d8794c;
+  font-weight: bold;
+  font-size: 15px;
+  text-align: center;
+}
+
+.tip{display:flex;gap:14px;margin-top:24px;padding:18px 20px;background:#fff9f5;border:1px solid #edd8cb;border-left:5px solid #d8794c;border-radius:12px}
+.tip svg{width:27px;height:27px;color:#d8794c;flex:none}
+.tip strong{display:block;color:#123f3a}
+.tip p{margin:3px 0 0;color:#4e5956;font-size:14px}
+.tasks{display:grid;gap:18px}
+.task{display:flex;gap:18px;padding:22px}
+.icon{width:48px;height:48px;border-radius:50%;background:#e8f4f2;color:#176f63;display:flex;align-items:center;justify-content:center;flex:none;font-size:24px}
+.icon svg{width:25px;height:25px}
+.label{display:block;margin-bottom:3px;color:#d8794c;font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase}
+h3{margin:0 0 8px;color:#123f3a;font-size:19px}
+.task p,.task li{color:#202725;font-size:15px}
+.task p{margin:0 0 10px}
+.task ul{margin:8px 0 0;padding-left:22px}
+.task li{margin-bottom:7px;font-size:14.5px}
+.task em{color:#176f63}
+.source{margin:40px 0 0;padding-top:18px;border-top:1px solid #d9e5e2;color:#747f7b;font-size:12px;font-style:italic}
+@media(max-width:800px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:560px){
+  main{padding:12px 10px 40px}
+  .hero{padding:30px 24px}
+  .hero h1{font-size:34px}
+  .hero p{font-size:15px}
+  .grid{grid-template-columns:1fr}
+  h2{font-size:23px}
+  .task{flex-direction:column;padding:20px}
+}
+</style>
+</head>
+<body>
+<main>
+  <section class="hero">
+    <p class="eyebrow">English Course · Vocabulary & Speaking Activities</p>
+    <h1>Your House</h1>
+    <p>Vocabulary and discussion prompts about your home – as a supplement to the Real Easy English worksheet from BBC Learning English.</p>
+  </section>
+
+  <section class="section">
+    <div class="heading">
+      <svg viewBox="0 0 24 24" fill="none"><path d="M4 19.5V6a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v14M6 20h13M8 8h7M8 12h7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+      <h2>Vocabulary</h2>
+    </div>
+    <p class="subtitle">Important words and expressions for talking about your home.</p>
+    
+    <div class="grid">
+      <div class="card">
+        <div class="en">terraced house</div>
+        <span class="tag">terraced house</span>
+        <p class="example">I live in a terraced house in the city centre.</p>
+        <div class="action-area">
+          <button class="btn-translate" onclick="toggleTranslation(this)">Übersetzung zeigen</button>
+          <div class="translation">Reihenhaus</div>
+        </div>
+      </div>
+      
+      <div class="card">
+        <div class="en">detached house</div>
+        <span class="tag">detached house</span>
+        <p class="example">My grandparents live in a detached house.</p>
+        <div class="action-area">
+          <button class="btn-translate" onclick="toggleTranslation(this)">Übersetzung zeigen</button>
+          <div class="translation">freistehendes Einfamilienhaus</div>
+        </div>
+      </div>
+      
+      <div class="card">
+        <div class="en">semi-detached house</div>
+        <span class="tag">semi-detached house</span>
+        <p class="example">We live in a semi-detached house.</p>
+        <div class="action-area">
+          <button class="btn-translate" onclick="toggleTranslation(this)">Übersetzung zeigen</button>
+          <div class="translation">Doppelhaushälfte</div>
+        </div>
+      </div>
+      
+      <div class="card">
+        <div class="en">block of flats</div>
+        <span class="tag">block of flats</span>
+        <p class="example">I live in a block of flats near the station.</p>
+        <div class="action-area">
+          <button class="btn-translate" onclick="toggleTranslation(this)">Übersetzung zeigen</button>
+          <div class="translation">Wohnblock / Mehrfamilienhaus</div>
+        </div>
+      </div>
+      
+      <div class="card">
+        <div class="en">flat / apartment</div>
+        <span class="tag">flat / apartment</span>
+        <p class="example">My flat is on the third floor.</p>
+        <div class="action-area">
+          <button class="btn-translate" onclick="toggleTranslation(this)">Übersetzung zeigen</button>
+          <div class="translation">Wohnung</div>
+        </div>
+      </div>
+      
+      <div class="card">
+        <div class="en">cottage</div>
+        <span class="tag">cottage</span>
+        <p class="example">They have a small cottage in the countryside.</p>
+        <div class="action-area">
+          <button class="btn-translate" onclick="toggleTranslation(this)">Übersetzung zeigen</button>
+          <div class="translation">Landhaus / Hütte</div>
+        </div>
+      </div>
+      
+      <div class="card">
+        <div class="en">bungalow</div>
+        <span class="tag">bungalow</span>
+        <p class="example">My aunt lives in a bungalow.</p>
+        <div class="action-area">
+          <button class="btn-translate" onclick="toggleTranslation(this)">Übersetzung zeigen</button>
+          <div class="translation">Bungalow (einstöckiges Haus)</div>
+        </div>
+      </div>
+      
+      <div class="card">
+        <div class="en">upstairs / downstairs</div>
+        <span class="tag">upstairs / downstairs</span>
+        <p class="example">Upstairs we have three bedrooms.</p>
+        <div class="action-area">
+          <button class="btn-translate" onclick="toggleTranslation(this)">Übersetzung zeigen</button>
+          <div class="translation">oben (Obergeschoss) / unten (Erdgeschoss)</div>
+        </div>
+      </div>
+      
+      <div class="card">
+        <div class="en">lounge / living room</div>
+        <span class="tag">lounge / living room</span>
+        <p class="example">We spend our evenings in the lounge.</p>
+        <div class="action-area">
+          <button class="btn-translate" onclick="toggleTranslation(this)">Übersetzung zeigen</button>
+          <div class="translation">Wohnzimmer</div>
+        </div>
+      </div>
+      
+      <div class="card">
+        <div class="en">dining room</div>
+        <span class="tag">dining room</span>
+        <p class="example">We only use the dining room on special occasions.</p>
+        <div class="action-area">
+          <button class="btn-translate" onclick="toggleTranslation(this)">Übersetzung zeigen</button>
+          <div class="translation">Esszimmer</div>
+        </div>
+      </div>
+      
+      <div class="card">
+        <div class="en">garden / yard</div>
+        <span class="tag">garden / yard</span>
+        <p class="example">We get lots of sun in the garden.</p>
+        <div class="action-area">
+          <button class="btn-translate" onclick="toggleTranslation(this)">Übersetzung zeigen</button>
+          <div class="translation">Garten / Hof</div>
+        </div>
+      </div>
+      
+      <div class="card">
+        <div class="en">cosy</div>
+        <span class="tag">cosy</span>
+        <p class="example">Our lounge is small but very cosy.</p>
+        <div class="action-area">
+          <button class="btn-translate" onclick="toggleTranslation(this)">Übersetzung zeigen</button>
+          <div class="translation">gemütlich</div>
+        </div>
+      </div>
+      
+      <div class="card">
+        <div class="en">dream house</div>
+        <span class="tag">dream house</span>
+        <p class="example">My dream house would be by the sea.</p>
+        <div class="action-area">
+          <button class="btn-translate" onclick="toggleTranslation(this)">Übersetzung zeigen</button>
+          <div class="translation">Traumhaus</div>
+        </div>
+      </div>
+      
+      <div class="card">
+        <div class="en">neighbourhood / area</div>
+        <span class="tag">neighbourhood / area</span>
+        <p class="example">I'd like to live in a quieter area.</p>
+        <div class="action-area">
+          <button class="btn-translate" onclick="toggleTranslation(this)">Übersetzung zeigen</button>
+          <div class="translation">Nachbarschaft / Gegend</div>
+        </div>
+      </div>
+      
+      <div class="card">
+        <div class="en">bigger / prettier than</div>
+        <span class="tag">comparatives</span>
+        <p class="example">My dream house would be bigger than my flat now.</p>
+        <div class="action-area">
+          <button class="btn-translate" onclick="toggleTranslation(this)">Übersetzung zeigen</button>
+          <div class="translation">größer / schöner als</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tip">
+      <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"/><path d="M12 8v.01M12 11v5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+      <div>
+        <strong>Teaching Tip</strong>
+        <p>Before the exercises, have participants create 2–3 of their own example sentences using at least five words from the list. This activates the vocabulary before moving on to the tasks.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="heading">
+      <svg viewBox="0 0 24 24" fill="none"><path d="M4 5h16v10H8l-4 4V5Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+      <h2>Further Discussion Activities</h2>
+    </div>
+    <p class="subtitle">For follow-up practice – speaking and discussing in pairs or small groups.</p>
+    
+    <div class="tasks">
+      <div class="task">
+        <div class="icon">👥</div>
+        <div>
+          <span class="label">A · Partner Work</span>
+          <h3>Partner Interview</h3>
+          <p>Interview each other using the questions from Exercise 4. Take notes on your partner's answers.</p>
+          <ul>
+            <li>What type of house does your partner live in?</li>
+            <li>What does he/she particularly like about his/her home?</li>
+            <li>Present your partner's answers to the group using reported speech: <em>"He said he lives in…"</em></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="task">
+        <div class="icon">💬</div>
+        <div>
+          <span class="label">B · Small Group (3–4)</span>
+          <h3>Group Discussion: "My Dream House"</h3>
+          <p>Discuss the following questions in small groups:</p>
+          <ul>
+            <li>If you could live anywhere in the world, where would your dream house be?</li>
+            <li>Would your dream house be in the city, in the countryside, or by the sea?</li>
+            <li>What are the three most important rooms or features for you? Why?</li>
+            <li>Would you rather have a big house far from the centre, or a small flat in the centre?</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="task">
+        <div class="icon">⇌</div>
+        <div>
+          <span class="label">C · Partner Work</span>
+          <h3>Compare and Evaluate (Comparatives)</h3>
+          <p>Compare your current home with your dream house and practise comparative forms:</p>
+          <ul>
+            <li><em>My dream house would be bigger / smaller than my house now.</em></li>
+            <li><em>My dream house would be more modern / more beautiful / quieter than my house now.</em></li>
+          </ul>
+          <p>Then share your ideas with another pair and report what you learned about your partner.</p>
+        </div>
+      </div>
+      
+      <div class="task">
+        <div class="icon">🏠</div>
+        <div>
+          <span class="label">D · Partner Work · Role Play</span>
+          <h3>House Viewing</h3>
+          <p>Work in pairs. One person is the estate agent, the other is the house hunter.</p>
+          <ul>
+            <li>The estate agent describes a house (number of rooms, location, special features).</li>
+            <li>The house hunter asks questions, e.g. <em>"Is there a garden?"</em>, <em>"How many bedrooms are there?"</em></li>
+            <li>At the end, the house hunter decides whether they would like to rent or buy the house – and explains why.</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="task">
+        <div class="icon">✎</div>
+        <div>
+          <span class="label">E · Partner Work · Writing</span>
+          <h3>Short Discussion Text</h3>
+          <p>Write a short paragraph together (5–6 sentences) with the title <em>"The Perfect Home"</em>. Then read your text to another pair and compare your ideas.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <p class="source">Original exercise material: BBC Learning English – Real Easy English Worksheet, "Your house" (© British Broadcasting Corporation 2025). Vocabulary and discussion activities added for the English course.</p>
+</main>
+
+<script>
+  function toggleTranslation(btn) {
+    const translationDiv = btn.nextElementSibling;
+    
+    if (translationDiv.style.display === 'block') {
+      translationDiv.style.display = 'none';
+      btn.textContent = 'Übersetzung zeigen';
+      btn.style.background = '#fff';
+      btn.style.color = '#176f63';
+    } else {
+      translationDiv.style.display = 'block';
+      btn.textContent = 'Übersetzung verbergen';
+      btn.style.background = '#e8f4f2';
+      btn.style.color = '#123f3a';
+    }
+  }
+</script>
+</body>
+</html>
